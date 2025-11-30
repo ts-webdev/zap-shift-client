@@ -1,5 +1,5 @@
 import React from "react";
-export const services = [
+const services = [
   {
     id: 1,
     title: "Same-Day Delivery",
@@ -57,7 +57,7 @@ const OurServices = () => {
         <div className="grid grid-cols-3 gap-7 mt-10">
           {services.map((service) => {
             return (
-              <div className="bg-white hover:bg-[#CAEB66] rounded-xl p-10 flex flex-col items-center text-center gap-5">
+              <div key={service.id} className="bg-white hover:bg-[#CAEB66] rounded-xl p-10 flex flex-col items-center text-center gap-5">
                 <p className="bg-linear-to-b from-gray-200 p-5 rounded-full text-2xl">{service.icon}</p>
                 <h3 className="text-2xl font-bold">{service.title}</h3>
                 <p className="text-accent">{service.description}</p>
