@@ -1,10 +1,14 @@
 import React from 'react';
 import Banner from '../banner/Banner';
+import HowItWorks from '../howItWorks/HowItWorks';
+import OurServices from '../ourServices/OurServices';
 
 const Home = () => {
     return (
-        <main className='max-w-7xl mx-auto px-5 my-10'>
+        <main>
             <Banner/>
+            <HowItWorks/>
+            <OurServices/>
         </main>
     );
 };
