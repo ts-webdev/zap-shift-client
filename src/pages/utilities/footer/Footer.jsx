@@ -1,11 +1,10 @@
 import React from "react";
 import Logo from "../../../components/Logo";
-import MaxWidth from "../../../components/MaxWidth";
 
 const Footer = () => {
   return (
-    <MaxWidth  paddingY={10}>
-      <footer className="footer footer-horizontal rounded-2xl footer-center bg-black text-primary-content p-10">
+    <footer className="max-w-7xl mx-auto px-5 py-10">
+      <div className="footer footer-horizontal rounded-2xl footer-center bg-black text-primary-content p-10">
         <aside>
           <Logo />
           <p className="font-bold">
@@ -52,8 +51,8 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-      </footer>
-    </MaxWidth>
+      </div>
+    </footer>
   );
 };
 

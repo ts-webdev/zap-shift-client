@@ -1,5 +1,4 @@
 import React from "react";
-import MaxWidth from "../../../components/MaxWidth";
 import Logo from "../../../components/Logo";
 import { NavLink } from "react-router";
 import Button from "../../../components/Button";
@@ -26,8 +25,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <MaxWidth paddingY={5}>
-      <div className="navbar bg-base-100 shadow-sm px-5 rounded-xl">
+    <div className="max-w-7xl mx-auto px-5 pt-3">
+      <div className=" navbar bg-base-100 shadow-sm px-5 rounded-xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -82,7 +81,7 @@ const Navbar = () => {
           <Button>Be a rider</Button>
         </div>
       </div>
-    </MaxWidth>
+    </div>
   );
 };
 
