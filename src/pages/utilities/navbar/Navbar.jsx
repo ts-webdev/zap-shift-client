@@ -2,25 +2,29 @@ import React from "react";
 import Logo from "../../../components/Logo";
 import { NavLink } from "react-router";
 import Button from "../../../components/Button";
+import "./navbar.css"
 
 const Navbar = () => {
   // nav links
   const links = (
     <>
       <li>
-        <NavLink>Services</NavLink>
+        <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink>Coverage</NavLink>
+        <NavLink to={"services"}>Services</NavLink>
       </li>
       <li>
-        <NavLink>About Us</NavLink>
+        <NavLink to={"/coverage"}>Coverage</NavLink>
       </li>
       <li>
-        <NavLink>Pricing</NavLink>
+        <NavLink to={"about"}>About Us</NavLink>
       </li>
       <li>
-        <NavLink>Be a Rider</NavLink>
+        <NavLink to={"pricing"}>Pricing</NavLink>
+      </li>
+      <li>
+        <NavLink to={"beARider"}>Be a Rider</NavLink>
       </li>
     </>
   );
